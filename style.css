@@ -75,3 +75,18 @@ body{
     display: none;
 }
 
+.showcase, .cards {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.showcase{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 80px 0;
+}
+
+.showcase h1{
+    font-size: 64px;
+}
+
