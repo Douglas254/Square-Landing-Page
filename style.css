@@ -105,6 +105,7 @@ body{
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0 5px 10px rgba(43, 40, 98, 0.2);
 }
 
 .cards div h3{
@@ -123,3 +124,38 @@ body{
     font-size: 14px;
     color: var(--link-color);
 }
+
+@media (max-width:1200px){
+    .showcase, .cards{
+        max-width: 900px;
+    }
+
+    .showcase{
+        grid-template-columns: 1fr;
+    }
+    
+    .showcase p{
+        max-width: 500px;
+    }
+}
+
+@media (max-width:900px){
+    .showcase, .cards{
+        max-width: 700px;
+    }
+
+    .showcase h1{
+        font-size: 46px;
+        padding-right: 50px;
+    }
+
+    @media (max-width:700px){
+        .showcase, .cards{
+            max-width: 500px;
+        }
+    
+        .cards{
+            grid-template-columns: 1fr;
+            gap: 40px;
+            text-align: center;
+        }
